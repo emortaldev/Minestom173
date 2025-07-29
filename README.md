@@ -17,3 +17,4 @@ instance.setChunkLoader(overworldGenerator);
 
 LegacyPopulateHack.registerEvents(instance.eventNode()); // register populate events
 ```
+<img width="2500" height="1309" alt="oldgeneration" src="https://github.com/user-attachments/assets/684e9379-881d-41a7-8bd7-6ede067d11d9" />
