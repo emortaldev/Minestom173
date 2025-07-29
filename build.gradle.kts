@@ -2,8 +2,8 @@ plugins {
     id("java")
 }
 
-group = "dev.emortal"
-version = "1.0-SNAPSHOT"
+group = "ca.spottedleaf"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
