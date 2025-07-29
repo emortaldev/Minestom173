@@ -60,7 +60,7 @@ public class ChunkProviderSky173 implements IChunkLoader, OldChunkGenerator {
 
     private BiomeBase173[] biomeNoiseCache;
 
-    public ChunkProviderSky173(Block.Getter blockGetter, Block.Setter blockSetter, int minHeight, int maxHeight, long seed) {
+    public ChunkProviderSky173(int minHeight, int maxHeight, long seed) {
         this.seed = seed;
         this.minHeight = minHeight;
         this.maxHeight = maxHeight;

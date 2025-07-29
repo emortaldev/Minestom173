@@ -1,10 +1,9 @@
 package ca.spottedleaf.oldgenerator.listener;
 
 import ca.spottedleaf.oldgenerator.OldChunkGenerator;
-import net.kyori.adventure.text.Component;
-import net.minestom.server.event.Event;
 import net.minestom.server.event.EventNode;
 import net.minestom.server.event.instance.InstanceChunkLoadEvent;
+import net.minestom.server.event.trait.InstanceEvent;
 import net.minestom.server.instance.Chunk;
 import net.minestom.server.instance.IChunkLoader;
 import net.minestom.server.instance.InstanceContainer;
@@ -36,7 +35,7 @@ public class LegacyPopulateHack {
         batch.apply(world, null);
     }
 
-    public static void init(EventNode<Event> eventNode) {
+    public static void registerEvents(EventNode<InstanceEvent> eventNode) {
         eventNode.addListener(InstanceChunkLoadEvent.class, LegacyPopulateHack::handleEvent);
     }
 
